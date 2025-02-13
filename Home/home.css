@@ -133,3 +133,55 @@
     
     
 }
+
+
+.BigSliderBtn2{
+    background: linear-gradient(to left  , rgba(44, 44, 44, 0.966),rgba(44, 44, 44, 0.966),transparent);
+    box-shadow: inset 0 0 12px gray;
+    transition: 700ms;
+
+}
+
+
+
+.BigSliderBtn2:hover{
+    transition: 500ms;
+    background-color: gray;
+    box-shadow: inset 0 0 12px gray, 0 0 4px gray;
+    border-radius: 12px;
+
+}
+
+
+.BigSliderBtn2:active{
+    opacity: 0.5;
+    transition: 100ms;
+
+}
+
+
+
+.BigSliderBtn1{
+    background: linear-gradient(to left bottom , rgba(36, 1, 1, 0.966),rgba(39, 1, 1, 0.966),transparent);
+    box-shadow: inset 0 0 12px rgb(133, 10, 10);
+    transition: 700ms;
+
+}
+
+
+
+.BigSliderBtn1:hover{
+    transition: 500ms;
+    background-color: rgb(134, 11, 11);
+    box-shadow: inset 0 0 12px rgb(100, 4, 4), 0 0 4px rgb(112, 5, 5);
+    border-radius: 12px;
+
+
+}
+
+
+.BigSliderBtn1:active{
+    opacity: 0.5;
+    transition: 100ms;
+
+}
