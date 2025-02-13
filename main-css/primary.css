@@ -3,3 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* color template */
+
+:root{
+    --color1 : #C41310;
+    --color2 : #16151A;
+}
+
+body{
+    background-color: var(--color2);
+}
