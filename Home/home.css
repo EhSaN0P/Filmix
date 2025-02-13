@@ -1,3 +1,135 @@
-body{
-    background-color: var(--color2);
+.Con-Interduce-Slider{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid #f8f2f2;
+  
+    
+    
+}
+
+
+
+
+/* first slider */ 
+
+
+.sliderCon{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    
+    
+}
+
+
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    
+    
+}
+
+
+.items{
+    
+    border: 1px solid #000;
+    width: 100%;
+    height: 95vh;
+    
+    
+}
+
+
+.owl-nav{
+    
+    position: absolute;
+    top: 40%;
+    z-index: 7658;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+}
+
+.owl-nav span:hover{
+    background-color: transparent;
+}
+
+
+.owl-nav >button {
+    background-color: transparent !important;
+
+}
+
+.owl-nav >button > span{
+    color: rgb(255, 255, 255);
+    font-size: 6em;
+    text-shadow: 0 0 12px black;
+
+}
+
+.owl-nav >button > span:active{
+    opacity: 0.5;
+  color: red;
+    
+}
+.owl-dots{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-dot >span{
+    width: 3rem !important;
+    height: 0.3rem !important;
+    background-color: rgba(255, 255, 255, 0.473) !important;
+    box-shadow: 0 0 0px white;
+    transition: 500ms !important;
+}
+
+
+.active >span{
+    width: 2rem !important;
+    height: 0.3rem !important;
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: 0 0 5px white;
+    transition: 700ms !important;
+}
+
+
+.items{
+    position: relative;
+}
+
+
+
+/*  */
+
+.infos{
+    position: absolute;
+    z-index: 21312312;
+    top: 0%;
+    padding: 4rem;
+    width: 50%;
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(to right , rgba(0, 0, 0, 0.966),transparent);
+    
+    
+    
+    
 }
