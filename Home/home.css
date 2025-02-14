@@ -40,8 +40,7 @@
 
 .items{
     
-    border: 1px solid #000;
-    width: 100%;
+    width: 100vw;
     height: 95vh;
     
     
@@ -185,3 +184,27 @@
     transition: 100ms;
 
 }
+
+.link-item2:nth-child(1):nth-child(1) > a{
+    color: red ;
+    text-shadow: 0 0 5px  ;
+    font-family: cursive;
+}
+
+
+.link-item:nth-child(1) > a{
+    color: rgb(107, 1, 1) ;
+    text-shadow: 0 0 5px  ;
+    font-family: cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
