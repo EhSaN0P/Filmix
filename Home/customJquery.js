@@ -21,7 +21,7 @@ $(".slider").owlCarousel({
     nav:true,
     loop:true,
     autoplay:false,
-    smartSpeed:2500,
+    smartSpeed:1900,
     autoplayHoverPause:true
     
   });

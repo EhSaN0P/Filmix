@@ -162,7 +162,7 @@
 
 
 .BigSliderBtn1{
-    background: linear-gradient(to left bottom , rgba(36, 1, 1, 0.966),rgba(39, 1, 1, 0.966),transparent);
+    background: linear-gradient(to left bottom , rgba(36, 1, 1, 0.966),rgb(39, 1, 1),transparent);
     box-shadow: inset 0 0 12px rgb(133, 10, 10);
     transition: 700ms;
 
