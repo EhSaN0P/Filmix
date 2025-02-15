@@ -1,8 +1,11 @@
 import { videos } from '../dataVideos-object/data.js';
 
 $(document).ready(function () {
+    seriesslider()
     CheckLogin()    
     secendHeader()
+    
+    
     
 });
     function CheckLogin() { 
@@ -57,3 +60,22 @@ $(document).ready(function () {
         
         
     }
+    function seriesslider() { 
+   
+        $("#slide").owlCarousel({
+            items: 1,
+            dots:true,
+            nav:true,
+            loop:true,
+            autoplay:false,
+            smartSpeed:1900,
+            autoplayHoverPause:true
+            
+          });
+        
+        
+            
+         }
+   
+   
+    
