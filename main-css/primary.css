@@ -15,6 +15,7 @@
 
 body{
     background-color: var(--color2);
+    overflow-x: hidden;
 }
 
 
@@ -31,7 +32,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     transition: 500ms !important;
-
+    padding: 0 2rem;
 }
 
 .parent-logo{
@@ -122,10 +123,13 @@ body{
 .profile-btn{
 
 
-border-radius: 72px;
-width: 3rem;
+
+width: 25rem;
 height: 3rem;
 cursor: pointer;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 }
 
 
@@ -136,14 +140,25 @@ overflow: hidden;
 }
 
 
-.profile-btn >img{
-    height: 100%;
+.profile-btn >a>img{
+    width: 100%;
+    height: 3rem;
+    
     
     
     
 }
+.profile-btn > div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
 
-
+.profile-btn > div>img{
+    width: 3rem;
+    height: 3rem;
+    filter: invert(100%);
+}
 
 
 
@@ -164,6 +179,7 @@ overflow: hidden;
     box-shadow: 0 0 12px rgb(0, 0, 0);
     transition: 1s !important;
     background-color: var(--color3) !important;
+    padding: 0 2rem;
     
 }
 
@@ -221,3 +237,103 @@ overflow: hidden;
 
 
 
+/* alaramNew */
+.alaramNew{
+    width: 10rem;
+    height: 10;
+}
+
+
+.searchHeader{
+  
+}
+
+
+
+/* searchSide */
+
+
+.searchSide{
+    width: 100vw;
+    height: 0vh ;
+    position: fixed;
+    top: -6rem;
+    background: linear-gradient(to bottom,rgb(34, 34, 34),rgb(0, 0, 0));
+    backdrop-filter: blur(8px);
+    z-index: 123123;
+    transition: 600ms;
+    overflow: hidden;
+    padding: 4rem;
+    opacity: 0;
+    
+}
+
+
+.searchSide >section{
+    width: 25%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+
+
+.searchSide > section >p{
+
+    color: var(--color1);
+    text-transform: capitalize;
+    font-weight: bolder;
+    text-shadow: 0 0 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+.searchSide > section >label{
+
+    color: var(--color2);
+    text-transform: capitalize;
+    font-weight: bolder;
+    opacity: 0.5;
+    text-wrap: nowrap;
+    transform: translateX(-30rem) translateY(4px);
+    user-select: inherit;
+    transition: 700ms;
+}
+
+
+.searchSide > section >input{
+    min-width: 30rem;
+    border-radius: 5px;
+    padding: 0 1rem;
+    outline: none;
+    box-shadow:  0 0 12px white;
+    color: transparent;
+    transition: 500ms;
+
+}
+
+.searchSide > section >input::selection{
+    background-color: #16151A;
+    color: #f8f8f8;
+}
+
+.searchSide > section >input:focus{
+    transition: 500ms;
+    color: black;
+    box-shadow:  0 0 3px white;
+}
+
+.searchSide > section >input:focus ~ label{
+    transition: 500ms;
+    transform: translateX(-31rem) translateY(-30px);
+    color: white;
+    opacity: 1;
+    text-shadow:  0 0 2px ;
+}
+
+
+/* hover list for my list */

@@ -1,4 +1,6 @@
 $(function () {
+  $(".hoverListShow").slideUp()
+
 
 // creating first interduce movies slider 
 interduceSldier()
@@ -32,6 +34,15 @@ secendSldier()
 
     
   });
+  // like toggle finished
+  SearchAndAlaramHover()
+
+// search side creating 
+SearchSideCreating()
+
+
+// list show
+
 
 });
 
@@ -104,7 +115,7 @@ function secendHeader(param) {
       $(".link-item").addClass("link-item2")
       $(".link-item").removeClass("link-item")
       $(".parent-logo img").attr('src', '../ui web video/desktop/All imgs/logo/logo2.png');
-      
+      $(".profile-btn > div>img").css("filter","invert(0%)")
 
     } else {
 
@@ -115,7 +126,7 @@ function secendHeader(param) {
       $(".link-item-parent2").removeClass("link-item-parent2")
       $(".link-item2").addClass("link-item")
       $(".link-item2").removeClass("link-item2")
-      
+      $(".profile-btn > div>img").css("filter","invert(100%)")
       $(".parent-logo img").attr('src', '../ui web video/desktop/All imgs/logo/logo.png');
       
 
@@ -158,5 +169,60 @@ function filter(param) {
 
    })
 
+
+ }
+
+
+
+ function SearchAndAlaramHover(param) {  
+
+  $(".searchHeader").mouseenter(function () { 
+    $(this).attr("src","../main-css/icons8-search.gif")
+    
+  });
+
+  $(".searchHeader").mouseleave(function () { 
+    $(this).attr("src","../main-css/icons8-search-50.png")
+    
+  });
+
+
+  $(".alaramNew").mouseenter(function () { 
+    $(this).attr("src","../main-css/icons8-alarm.gif")
+    
+  });
+
+  $(".alaramNew").mouseleave(function () { 
+    $(this).attr("src","../main-css/icons8-alarm-50.png")
+    
+  });
+
+
+ }
+
+
+//  creating search part 
+
+function SearchSideCreating() { 
+
+  // opening the search side
+  $(".searchHeader").click(function (e) { 
+    
+    $(".searchSide").css("height","100vh")
+    $(".searchSide").css("opacity","1")
+    $(".searchSide").css("top","0")
+
+    
+  });
+
+  
+  // Closing the search side
+  $(".closeSearchPart").click(function (e) { 
+    
+    $(".searchSide").css("height","0vh")
+    $(".searchSide").css("opacity","0")
+    $(".searchSide").css("top","-6rem")
+    
+  });
 
  }
