@@ -2,6 +2,8 @@ $(function () {
 
 // creating first interduce movies slider 
 interduceSldier()
+
+secendSldier()
 // checking login
     CheckLogin()
 
@@ -9,8 +11,28 @@ interduceSldier()
     
     secendHeader()
     
+  filter()
+    
+  // toggle like
+  let likeState = false
+  $(".item2-info-div > section > div > i:nth-child(1)").click(function (e) { 
+
+    if (likeState == false) {
+      $(this).addClass(" fa-heart")
+    $(this).removeClass(" fa-heart-o")
+    likeState =true
+    }
+
+    else{
+      $(this).addClass(" fa-heart-o")
+    $(this).removeClass(" fa-heart")
+    likeState = false
+    }
+   
 
     
+  });
+
 });
 
 
@@ -21,9 +43,9 @@ function interduceSldier() {
 $(".slider").owlCarousel({
     items: 1,
     dots:true,
-    nav:true,
+    nav:false,
     loop:true,
-    autoplay:false,
+    autoplay:true,
     smartSpeed:1900,
     autoplayHoverPause:true
     
@@ -33,6 +55,24 @@ $(".slider").owlCarousel({
     
  }
 
+ // secend Sldier
+function secendSldier() { 
+   
+  $(".slider2 ").owlCarousel({
+      items: 5,
+      dots:false,
+      nav:true,
+      loop:true,
+      autoplay:true,
+      smartSpeed:1900,
+      autoplayHoverPause:true,
+      
+      
+    });
+  
+  
+      
+   }
 
  function CheckLogin() { 
   let check = $(".profile-btn > a > img").attr("src")
@@ -83,6 +123,40 @@ function secendHeader(param) {
     }
 
   });
+
+
+ }
+
+
+function filter(param) { 
+
+  // secend slider btns
+  $(".btn-parent0").on("click"," .btns0",function (param) {
+
+
+    $(this).toggleClass("btnsFactive0")
+
+
+
+
+   })
+
+// secend slider btns finish
+
+
+  $(".btn-parent").on("click"," .btns",function (param) { 
+
+    $(".btn-parent>button").removeClass("btnsFactive")
+    $(".btn-parent>button").addClass("btns")
+
+    $(this).toggleClass("btnsFactive")
+
+    
+
+    let filterDataValue = $(this).attr("data-filter")
+    $(".filter-items-container").isotope({filter:filterDataValue})
+
+   })
 
 
  }
