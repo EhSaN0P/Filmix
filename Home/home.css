@@ -41,11 +41,16 @@
 .items{
     
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     
     
 }
 
+.owl-dots{
+    transform: translateY(-4rem);
+    width: fit-content;
+    margin: auto;
+}
 
 .owl-nav{
     
