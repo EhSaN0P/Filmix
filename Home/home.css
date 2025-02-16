@@ -131,13 +131,14 @@
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    background: linear-gradient(to right , rgba(0, 0, 0, 0.966),transparent);
-    
-    
-    
+    background: linear-gradient(to right , rgba(0, 0, 0, 0.966),transparent);    
+    z-index: 76;
     
 }
 
+.infos:nth-child(2){
+  height: 100%;
+}
 
 .BigSliderBtn2{
     background: linear-gradient(to left  , rgba(44, 44, 44, 0.966),rgba(44, 44, 44, 0.966),transparent);
