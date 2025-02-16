@@ -241,9 +241,10 @@
 .items2{
   
   
-  height: 33rem !important;
+  height: 30rem !important;
   margin: 2rem;
   cursor: pointer;
+  width: 22rem;
   
   
 }
@@ -536,8 +537,8 @@ color: red;
 
 
   .filter-items{
-    width: 18.4rem;
-    height: 29rem;
+    width: 19.4rem;
+    height: 25rem;
     margin-inline: 1rem;
     padding: 0.4rem;
 
