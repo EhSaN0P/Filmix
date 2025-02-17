@@ -69,13 +69,20 @@ $(document).ready(function () {
             loop:true,
             autoplay:false,
             smartSpeed:1900,
-            autoplayHoverPause:true
-            
+            autoplayHoverPause:true,
+            navText: ['<i class="right"><</i>', '<i class="left">></i>'],
+                
           });
         
         
             
          }
+        function slideritem() {
+            videos.forEach(video => {
+                const img = $('<img>').attr('src', video.src);
+                $('#slide').append(img);
+            });
+        }
    
    
     

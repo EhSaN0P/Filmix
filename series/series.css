@@ -10,8 +10,11 @@ link-item2:nth-child(1):nth-child(1) > a{
     text-shadow: 0 0 5px  ;
     font-family: cursive;
 }
+::-webkit-scrollbar{
+    width: 0px;
+}
 .infos{
-    left: 50%;
+    left: 80%;
     position: absolute;
     z-index: 21312312;
     top: 0%;
@@ -40,7 +43,55 @@ link-item2:nth-child(1):nth-child(1) > a{
     
     
 }
-
+.right{
+    position: absolute;
+    background-color: rgb(29, 29, 29);
+    width: 50px;
+    box-shadow: 0 0 5px black;
+    transform: translateX(-20%);
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    
+    font-weight: 800;
+    left: 0%;
+    top: 50%;
+    font-size: 30px;
+    color: white;
+}
+.left{
+    position: absolute;
+    background-color: rgb(29, 29, 29);
+    width: 50px;
+    box-shadow: 0 0 5px black;
+    transform: translateX(20%);
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    
+    font-weight: 800;
+    right: 0%;
+    top: 50%;
+    font-size: 30px;
+    color: white;
+}
+.owl-dots{
+    z-index: 123123;
+    position: absolute;
+    bottom: -10%;
+    /* transform: translate(0% , 0%); */
+    left: 50%;
+}
+.owl-dots > button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+    border: 1px solid black;
+}
 
 
 
