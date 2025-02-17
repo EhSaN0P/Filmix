@@ -5,9 +5,9 @@ link-item2:nth-child(1):nth-child(1) > a{
 }
 
 
-.link-item:nth-child(1) > a{
+.link-item:nth-child(2) > a{
     color: rgb(107, 1, 1) ;
-    text-shadow: 0 0 5px  ;
+    text-shadow: 0 0 5px black ;
     font-family: cursive;
 }
 ::-webkit-scrollbar{

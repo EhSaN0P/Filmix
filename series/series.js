@@ -4,8 +4,8 @@ $(document).ready(function () {
     seriesslider()
     CheckLogin()    
     secendHeader()
-    
-    
+    SearchSideCreating()
+    SearchAndAlaramHover()
     
 });
     function CheckLogin() { 
@@ -85,4 +85,56 @@ $(document).ready(function () {
         }
    
    
-    
+        function SearchSideCreating() { 
+
+            // opening the search side
+            $(".searchHeader").click(function (e) { 
+              
+              $(".searchSide").css("height","100vh")
+              $(".searchSide").css("opacity","1")
+              $(".searchSide").css("top","0")
+          
+              
+            });
+          
+            
+            // Closing the search side
+            $(".closeSearchPart").click(function (e) { 
+              
+              $(".searchSide").css("height","0vh")
+              $(".searchSide").css("opacity","0")
+              $(".searchSide").css("top","-6rem")
+              
+            });
+          
+
+           }
+
+
+
+           
+ function SearchAndAlaramHover(param) {  
+
+    $(".searchHeader").mouseenter(function () { 
+      $(this).attr("src","../main-css/icons8-search.gif")
+      
+    });
+  
+    $(".searchHeader").mouseleave(function () { 
+      $(this).attr("src","../main-css/icons8-search-50.png")
+      
+    });
+  
+  
+    $(".alaramNew").mouseenter(function () { 
+      $(this).attr("src","../main-css/icons8-alarm.gif")
+      
+    });
+  
+    $(".alaramNew").mouseleave(function () { 
+      $(this).attr("src","../main-css/icons8-alarm-50.png")
+      
+    });
+  
+  
+   }
