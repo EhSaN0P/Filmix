@@ -6,6 +6,14 @@ $(document).ready(function () {
     secendHeader()
     SearchSideCreating()
     SearchAndAlaramHover()
+
+
+    
+
+
+
+
+
     
 });
     function CheckLogin() { 
@@ -18,6 +26,15 @@ $(document).ready(function () {
         else if (check == "#" & gender == false ) {
             $(".profile-btn > a > img").attr("src","../ui web video/desktop/All imgs/user not found img/girl.jpg")
             
+        }
+        
+        let dataHorror = videos.genre.horror
+        
+        for (const key in dataHorror) {
+            const element = dataHorror[key];
+            createItemForSlider(element.img,element.namee,element.rate)            
+            
+          
         }
         
         
@@ -59,6 +76,7 @@ $(document).ready(function () {
         
         
     }
+
     function seriesslider() { 
    
         $("#slide").owlCarousel({
@@ -75,14 +93,14 @@ $(document).ready(function () {
         
         
             
-         }
+    }
+
         function slideritem() {
             videos.forEach(video => {
                 const img = $('<img>').attr('src', video.src);
                 $('#slide').append(img);
             });
-        }
-   
+    }
    
         function SearchSideCreating() { 
 
@@ -107,7 +125,7 @@ $(document).ready(function () {
             });
           
 
-           }
+    }
 
 
 
@@ -138,3 +156,51 @@ $(document).ready(function () {
   
   
    }
+
+   function createItemForSlider(img,name,rate) { 
+    // container
+    let conItem = document.createElement("article")
+    conItem.className = "HorrorItem";
+    // img 
+    let Sliderimg = document.createElement("img")
+    Sliderimg.src = img
+
+    // con > info parent
+    let infoParent = document.createElement("div")
+    infoParent.className = "infoParent";
+     // con > info parent > section
+    let HorrorItemInfoSec = document.createElement("section")
+    HorrorItemInfoSec.className = "HorrorItemInfo";
+
+    // con > info parent > section > texts
+    let Paragraph = document.createElement("p")
+    Paragraph.innerText = name
+
+    let ratee = document.createElement("span")
+    ratee.innerText = rate + "/10 " ;
+
+    let star = document.createElement("i")
+    star.classList = "fa fa-star"
+
+    let btn = document.createElement("button")
+    btn.innerText = "Watch Now"
+    btn.classList = "HorrorItemInfoBtn"
+    
+    //  geting container to add items
+
+    let slider = document.getElementsByClassName("HorrorSliderMovies").item(0)
+    
+    slider.appendChild(conItem)
+    conItem.appendChild(Sliderimg)
+    conItem.appendChild(btn)
+    conItem.appendChild(infoParent)
+    infoParent.appendChild(HorrorItemInfoSec)
+    HorrorItemInfoSec.appendChild(Paragraph)
+    HorrorItemInfoSec.appendChild(ratee)
+    ratee.appendChild(star)
+
+
+
+   
+
+    }
