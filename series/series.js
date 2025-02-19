@@ -53,7 +53,6 @@ $(document).ready(function () {
                 $(".parent-logo img").attr('src', '../ui web video/desktop/All imgs/logo/logo.png');
                 
                 
-                
             }
             
         });
@@ -117,6 +116,7 @@ $(document).ready(function () {
 
     $(".searchHeader").mouseenter(function () { 
       $(this).attr("src","../main-css/icons8-search.gif")
+
       
     });
   

@@ -29,10 +29,32 @@ export let videos = {
                         link: '<iframe src="https://www.aparat.com/video/video/embed/videohash/r114220/vt/frame"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>',
                         img: "../videos img/horror/the-grudge-2-2006-121668.jpg",
                     },
+                    // Scream1
+                    Scream1 : {
+                        namee: "ُScream 1",
+                        rate:6,
+                        link: '<iframe src="https://www.aparat.com/video/video/embed/videohash/INOnC/vt/frame"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>',
+                        img: "../videos img/horror/scream-poster.jpg",
+                    },
+                    // slender Man
+                    slenderMan : {
+                        namee: "ُslender Man",
+                        rate:8,
+                        link: '<iframe src="https://www.aparat.com/video/video/embed/videohash/b0154a2/vt/frame"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>',
+                        img: "../videos img/horror/slender_man_wallpaper_by_garnetbarren_d71j1uf-fullview.jpg",
+                    },
 
             },
             // fun movies
             fun:{
+                   // Hop
+                   Hop : {
+                    namee: "Hop",
+                    rate:8,
+                    link: '<iframe src="https://www.aparat.com/video/video/embed/videohash/vmNZ9/vt/frame"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>',
+                    img: "../videos img/fun/hop.jpg",
+                },
+   
 
             },
             // action movies

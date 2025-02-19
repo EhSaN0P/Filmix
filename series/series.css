@@ -4,6 +4,9 @@ link-item2:nth-child(1):nth-child(1) > a{
     font-family: cursive;
 }
 
+.link-item2{
+    filter: invert(100%);
+}
 
 .link-item:nth-child(2) > a{
     color: rgb(107, 1, 1) ;
@@ -108,3 +111,90 @@ link-item2:nth-child(1):nth-child(1) > a{
 
 
 
+/* Horror Slider Movies */
+
+.HorrorSliderMovies{
+    width: 100%;
+    min-height: 25rem;
+    border: 1px solid #ffffff;
+    padding: 3rem;
+    
+}
+
+
+.HorrorItem{
+    width: 20%;
+    height: 24.5rem;
+    
+}
+
+.HorrorItem > img{
+    width: 100%;
+    height: 80%;
+    border-radius: 12px;
+    box-shadow:  0 0 12px rgb(0, 0, 0);
+}
+
+
+.HorrorItemInfo{
+    display: flex;
+    justify-content: start;
+    margin-inline: 1rem;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem;
+}
+
+.HorrorItemInfo>p{
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    text-shadow: 0 0 3px ;
+}
+
+.HorrorItemInfo > span{
+    color: gold;
+    font-weight: bolder;
+    text-shadow: 0 0 3px ;
+}
+
+
+
+
+.HorrorItemInfoBtn{
+    background-color: aliceblue;
+    box-shadow: 0 0 5px white;
+    font-weight: bolder;
+    text-transform: capitalize;
+    border-radius: 12px;
+    width: 25%;
+    height:3rem;
+    color: var(--color2);
+    transition: 400ms;
+}
+
+
+.HorrorItemInfoBtn:hover{
+    background-color: aliceblue;
+    box-shadow: 0 0 5px white;
+    opacity: 0.5;
+    transition: 500ms;
+    font-weight: bolder;
+    text-transform: capitalize;
+    border-radius: 12px;
+    width: 25%;
+    height:3rem;
+    color: var(--color2);
+
+}
+
+
+
+.infoParent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
