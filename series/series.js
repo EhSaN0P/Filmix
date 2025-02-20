@@ -32,7 +32,7 @@ $(document).ready(function () {
         
         for (const key in dataHorror) {
             const element = dataHorror[key];
-            createItemForSlider(element.img,element.namee,element.rate)            
+            createItemForSlider(element.VerticalImg,element.namee,element.rate)            
             
           
         }

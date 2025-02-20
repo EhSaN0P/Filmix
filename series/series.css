@@ -121,7 +121,7 @@
 
 
 .HorrorItem{
-    width: 15rem;
+    width: 17rem;
     height: fit-content;
     flex-direction: column;  
     display: flex;
@@ -137,8 +137,8 @@
 
 .HorrorItem > img{
     width: 100% !important;
-    height: 20rem ;
-    border-radius: 2px;
+    height: 25rem ;
+    border-radius: 5px;
 }
 
 .HorrorItem:hover > img{
