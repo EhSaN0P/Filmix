@@ -185,6 +185,11 @@ overflow: hidden;
 }
 
 
+.Myheader2 > .profile-btn > div img{
+    filter: invert(0%);
+    transition: 300ms;
+}
+
 /* link items  li */
 .link-item-parent2:has(.link-item2:hover) .link-item2:not(:hover) {
     opacity: 0.5 !important;
@@ -225,8 +230,8 @@ overflow: hidden;
 }
 
 
-.link-item2 > a{
-    color: rgba(27, 23, 23, 0.692);
+.link-item2  a{
+    color: rgb(15, 5, 5) !important;
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-shadow:  0 0 2px black ;
@@ -245,10 +250,6 @@ overflow: hidden;
 }
 
 
-.searchHeader{
-  
-}
-
 
 
 /* searchSide */
@@ -261,7 +262,7 @@ overflow: hidden;
     top: -6rem;
     background: linear-gradient(to bottom,rgb(34, 34, 34),rgb(0, 0, 0));
     backdrop-filter: blur(8px);
-    z-index: 123123;
+    z-index: 12312342432324324323;
     transition: 600ms;
     overflow: hidden;
     padding: 4rem;
