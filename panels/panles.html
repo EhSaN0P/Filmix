@@ -6,9 +6,11 @@
     <title>Filmix</title>
     <link rel="icon" href="../ui web video/desktop/All imgs/logo/logo.png" />
 
+     <!-- booot strap css link -->
+      <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
     <!-- Tailwind css added -->
-    <link rel="stylesheet" href="../tailwind/input.css" />
-    <link rel="stylesheet" href="../tailwind/output.css" />
+    <!-- <link rel="stylesheet" href="../tailwind/input.css" />
+    <link rel="stylesheet" href="../tailwind/output.css" /> -->
     <!-- jquery slider css added -->
     <link rel="stylesheet" href="../jquery Files/Slider/owl.carousel.min.css" />
     <link
@@ -33,7 +35,7 @@
   <body>
     <!----------------------------- body  start----------------------------->
 
-    <nav
+    <!-- <nav
       class="flex align-middle gap-10 w-[50%] mx-auto h-10 bg-gray-800 rounded-b-2xl"
     >
       <a
@@ -83,7 +85,58 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+
+
+    <!-- tab page -->
+
+    <section class="container " style="width:60%;margin: auto;">
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist" style="display: flex;justify-content: space-evenly;">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="Devices-tab" data-bs-toggle="tab" data-bs-target="#Devices" type="button" role="tab" aria-controls="Devices" aria-selected="true">Devices</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="KidLock-tab" data-bs-toggle="tab" data-bs-target="#KidLock" type="button" role="tab" aria-controls="KidLock" aria-selected="false">Kid Lock</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Pays-tab" data-bs-toggle="tab" data-bs-target="#Pays" type="button" role="tab" aria-controls="Pays" aria-selected="false">Pays</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Profile-tab" data-bs-toggle="tab" data-bs-target="#Profile" type="button" role="tab" aria-controls="Profile" aria-selected="false">Profile</button>
+        </li>
+      </ul>
+      
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="Devices" role="tabpanel" aria-labelledby="Devices-tab">tab 1</div>
+
+        <div class="tab-pane fade" id="KidLock" role="tabpanel" aria-labelledby="KidLock-tab">tab 2</div>
+
+        <div class="tab-pane fade" id="Pays" role="tabpanel" aria-labelledby="Pays-tab">tab 3</div>
+
+        <div class="tab-pane fade" id="Profile" role="tabpanel" aria-labelledby="Profile-tab">tab 4</div>
+      </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!----------------------------- body  finish----------------------------->
     <!-- module link for data and custom js -->
@@ -92,8 +145,10 @@
 
     <!-- script links -->
 
-    <!-- Tailwind css added -->
-    <script src="../tailwind/tailwind.js"></script>
+    <!-- boot strap script added -->
+     <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Tailwind script added -->
+    <!-- <script src="../tailwind/tailwind.js"></script> -->
     <!-- jquery script added -->
     <script src="../jquery Files/jquery-3.6.0.min.js"></script>
     <!-- jquery slider added -->
