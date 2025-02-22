@@ -6,7 +6,7 @@ $(document).ready(function () {
     secendHeader()
     SearchSideCreating()
     SearchAndAlaramHover()
-
+    CreatingSectionCaallback()
 
     
 
@@ -16,6 +16,39 @@ $(document).ready(function () {
 
     
 });
+
+
+
+
+function CreatingSectionCaallback(param) { 
+ 
+    // for horror
+    let dataHorror = videos.genre.horror
+        
+    for (const key in dataHorror) {
+        const element = dataHorror[key];
+        createItemForSlider(element.VerticalImg,element.namee,element.rate,"Horror")            
+        
+      
+    }
+
+// for horror
+let datFun = videos.genre.fun
+        
+for (const key in datFun) {
+    const element = datFun[key];
+    createItemForSlider(element.VerticalImg,element.namee,element.rate,"Fun")            
+    
+  
+}
+
+
+ }
+
+
+
+
+
     function CheckLogin() { 
         let check = $(".profile-btn > a > img").attr("src")
         let gender = true;
@@ -28,14 +61,7 @@ $(document).ready(function () {
             
         }
         
-        let dataHorror = videos.genre.horror
-        
-        for (const key in dataHorror) {
-            const element = dataHorror[key];
-            createItemForSlider(element.VerticalImg,element.namee,element.rate)            
-            
-          
-        }
+       
         
         
         
@@ -157,7 +183,7 @@ $(document).ready(function () {
   
    }
 
-   function createItemForSlider(img,name,rate) { 
+   function createItemForSlider(img,name,rate,section) { 
     // container
     let conItem = document.createElement("article")
     conItem.className = "HorrorItem";
@@ -188,7 +214,7 @@ $(document).ready(function () {
     
     //  geting container to add items
 
-    let slider = document.getElementsByClassName("HorrorSliderMovies").item(0)
+    let slider = document.getElementsByClassName(section+"SliderMovies").item(0)
     
     slider.appendChild(conItem)
     conItem.appendChild(Sliderimg)

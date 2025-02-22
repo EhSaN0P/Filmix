@@ -109,11 +109,12 @@
 
 /* Horror Slider Movies */
 
-.HorrorSliderMovies {
+.AllSecFix {
     width: 119rem !important;
     min-height: 25rem;
     display: flex;
     justify-content: start;
+    padding: 1rem;
     
     
     
@@ -234,5 +235,49 @@
 }
 
 
+
+
+/* section for all title  of genere  */
+
+.genereSecion{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+}
+
+.genereSecion >p {
+    color: whitesmoke;
+    text-shadow: 0 0 4px ;
+    font-size: 1.4rem;
+}
+
+
+
+.genereSecion >a {
+    color: goldenrod;
+    text-shadow: 0 0 2px ;
+    font-size: 1.3rem;
+    transition: 500ms;
+}
+
+
+.genereSecion >a:hover {
+    color: goldenrod;
+    opacity: 0.5;
+    text-shadow: 0 0 2px ;
+    font-size: 1.3rem;
+    transition: 500ms;
+}
+
+
+.genereSecion >a  >span{
+    color: goldenrod;
+    text-shadow: 0 0 2px ;
+    font-size: 1.2rem;
+    font-weight:bolder ;
+}
 
 

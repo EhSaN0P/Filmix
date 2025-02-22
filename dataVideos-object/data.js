@@ -58,7 +58,7 @@ export let videos = {
                     rate:8,
                     link: '<iframe src="https://www.aparat.com/video/video/embed/videohash/vmNZ9/vt/frame"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>',
                     img: "../videos img/fun/desktop/hop.jpg",
-                    VerticalImg: "",
+                    VerticalImg: "../videos img/fun/mobile/Hop2011Poster.jpg",
                 },
    
 
