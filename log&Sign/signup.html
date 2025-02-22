@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign up</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      display: flex;
+      flex-direction: row-reverse;
+      height: 100vh;
+      font-family: sans-serif;
+
+
+    }
+    .sign-box{
+      flex: 0.7;
+      background: linear-gradient(30deg, orange , orangered);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      color: white;
+      border-radius: 12px 0px 0px 12px;
+      animation-name: show;
+      animation-duration: 1s;
+
+    }
+    .sign-box h1{
+      font-weight: 700;
+    }
+    .sign-box a{
+      text-decoration: none;
+      border: 1px solid white;
+      padding-inline: 30px;
+      padding-block: 10px;
+      border-radius: 22px;
+      color: white;
+      font-weight: 600;
+    }
+    .sign-box p{
+      width: 40%;
+      text-align: center;
+    }
+
+    .login-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation-name: fadeIn;
+      animation-duration: 700ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+      padding-top: 100px;
+      gap: 30px;
+      flex: 1;
+    }
+    .login-box h1{
+      color: orange;
+    }
+    .other-login{
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+
+
+    }
+    .other-login a{
+      text-decoration: none;
+      border: 1px solid rgba(111,111,111,0.2);
+      font-weight: 600;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      color: black;
+    }
+    .login-box > p{
+      font-size: 12px;
+      color: gray;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    .login-input{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .login-input input{
+      background-color: rgba(181, 181, 181, 0.2);
+      border: none;
+      height: 25px;
+      width: 100%;
+      padding-left: 10px;
+    }
+    .username{
+      position: relative;
+      width: 100%;
+    }
+
+    .login-input label{
+      margin-right: 28px;
+      padding-left: 5px;
+      font-size: 15px;
+      color: gray;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+    }
+    .password {
+      position: relative;
+      width: 100%;
+    }
+
+    .login-input label{
+      margin-right: 28px;
+      padding-left: 5px;
+      font-size: 15px;
+      color: gray;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+    }
+    .login-input a{
+      width: 70%;
+      text-decoration: none;
+      text-align: center;
+      background-color: orangered;
+      padding: 10px;
+      border-radius: 22px;
+      color: white;
+      font-weight: 600;
+      transition: 500ms ease-in-out;
+    }
+    .login-input a:hover{
+      background-color: transparent;
+      border: 1px solid #009f82 ;
+      color: #009f82;
+    }
+    .login-input input:focus{
+      border: 1px solid orange;
+    }
+    *:focus {
+      outline: none;
+    }
+    @keyframes show{
+      0%{
+        transform: translateX(100%);
+      }
+      100%{
+        transform: translateX(0%);
+      }
+    }
+    @keyframes fadeIn {
+      0%{
+        opacity: 0;
+        transform: translateX(-10%);
+      }
+      100%{
+        opacity: 1;
+        transform: translateX(0%);
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="sign-box">
+  <h1>خوش آمدید</h1>
+  <p>برای دسترسی به سایت باید ثبت نام کنید</p>
+  <a href="/login.html">ورود</a>
+</div>
+<div class="login-box">
+  <h1>ساخت اکانت</h1>
+  <div class="other-login">
+    <a href="#">f</a>
+    <a href="#">G+</a>
+    <a href="#">in</a>
+  </div>
+  <p>یا از ایمیل استفاده کنید</p>
+  <form class="login-input">
+    <div class="username">
+      <label id="namelabel">نام</label>
+      <input type="text" id="nameinput">
+    </div>
+    <div class="username">
+      <label id="userlabel">ایمیل</label>
+      <input type="email" id="userinput">
+    </div>
+    <div class="password">
+      <label id="passwordlabel">رمز عبور</label>
+      <input type="password" id="passwordinput">
+    </div>
+    <a href="/login.html">ثبت نام</a>
+  </form>
+</div>
+<script>
+  let user = document.getElementById('userinput')
+  let userlabel = document.getElementById('userlabel')
+  let password = document.getElementById('passwordinput')
+  let passwordlabel = document.getElementById('passwordlabel')
+  let name = document.getElementById('nameinput')
+  let namelabel = document.getElementById('namelabel')
+  user.addEventListener("keydown",() =>{
+
+    userlabel.style.display ="none";
+
+  })
+  user.addEventListener("blur",() => {
+    if (user.value ==""){
+      userlabel.style.display ="block";
+    }
+    else {
+      userlabel.style.display ="none";
+
+    }
+  })
+  password.addEventListener("keydown",() =>{
+
+    passwordlabel.style.display ="none";
+
+  })
+  password.addEventListener("blur",() => {
+    if (password.value ==""){
+      passwordlabel.style.display ="block";
+    }
+    else {
+      passwordlabel.style.display ="none";
+
+    }
+  })
+  name.addEventListener("keydown",() =>{
+
+    namelabel.style.display ="none";
+
+  })
+  name.addEventListener("blur",() => {
+    if (user.value ==""){
+      namelabel.style.display ="block";
+    }
+    else {
+      namelabel.style.display ="none";
+
+    }
+  })
+
+
+
+</script>
+</body>
+</html>
