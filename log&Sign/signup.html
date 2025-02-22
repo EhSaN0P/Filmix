@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>sign up</title>
+    <link rel="stylesheet" href="main.css">
   <style>
     *{
       padding: 0;
@@ -19,16 +20,18 @@
     }
     .sign-box{
       flex: 0.7;
-      background: linear-gradient(30deg, orange , orangered);
+      background: linear-gradient(to bottom , rgb(119, 3, 3) , rgb(206, 6, 6));
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 30px;
       color: white;
-      border-radius: 12px 0px 0px 12px;
+      border-radius: 0px 12px 12px 0px;
       animation-name: show;
       animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
 
     }
     .sign-box h1{
@@ -61,7 +64,7 @@
       flex: 1;
     }
     .login-box h1{
-      color: orange;
+      color: rgb(255, 0, 0);
     }
     .other-login{
       display: flex;
@@ -135,7 +138,7 @@
       width: 70%;
       text-decoration: none;
       text-align: center;
-      background-color: orangered;
+      background-color: rgb(255, 0, 0);
       padding: 10px;
       border-radius: 22px;
       color: white;
@@ -148,7 +151,7 @@
       color: #009f82;
     }
     .login-input input:focus{
-      border: 1px solid orange;
+      border: 1px solid rgb(255, 0, 0);
     }
     *:focus {
       outline: none;
@@ -175,9 +178,9 @@
 </head>
 <body>
 <div class="sign-box">
-  <h1>خوش آمدید</h1>
-  <p>برای دسترسی به سایت باید ثبت نام کنید</p>
-  <a href="/login.html">ورود</a>
+  <h1>Hi new friend</h1>
+  <p>We have to have some information about you,if you are an old friend press the button</p>
+  <a href="login.html">Login</a>
 </div>
 <div class="login-box">
   <h1>ساخت اکانت</h1>
@@ -200,7 +203,7 @@
       <label id="passwordlabel">رمز عبور</label>
       <input type="password" id="passwordinput">
     </div>
-    <a href="/login.html">ثبت نام</a>
+    <a href="login.html">ثبت نام</a>
   </form>
 </div>
 <script>
