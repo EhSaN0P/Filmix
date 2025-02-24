@@ -236,6 +236,7 @@
   
   
   
+  
 }
 
 
@@ -243,18 +244,19 @@
   
   
   height: 30rem !important;
-  margin: 2rem;
+  margin-inline: 4rem;
   cursor: pointer;
   width: 22rem;
-  
+  padding: 1rem;
   
 }
 
 
 
 .items2 img{
+  margin: auto;
   width: 100% !important;
-  height: 80%;
+  height: 70%;
   user-select: none;
   border-radius: 18px;
   box-shadow:  0 0 22px;  
@@ -520,6 +522,16 @@ color: red;
   gap: 4px;
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* filter */

@@ -70,9 +70,9 @@ $(".slider").owlCarousel({
 function secendSldier() { 
    
   $(".slider2 ").owlCarousel({
-      items: 5,
+      items: 4,
       dots:false,
-      nav:true,
+      nav:false,
       loop:true,
       autoplay:true,
       smartSpeed:1900,
