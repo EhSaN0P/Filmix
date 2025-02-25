@@ -336,6 +336,29 @@ overflow: hidden;
     opacity: 1;
     text-shadow:  0 0 2px ;
 }
+.input-costume{
+    background-color: transparent;
+    border:1px solid #1022c4;
+    border-radius: 15px;
+    color: white;
+    outline: 1px solid #1022c4;
+    width: 50%;
+    text-align: center;
+}
+.input-code{
+    transform: translateX(-25%);
+    height: 50px;
+    border-radius: 25px;
+    border:1px solid #1022c4;
+    color: white;
+    outline: 1px solid #1022c4;
+    background-color: transparent;
+    text-align: center;
+    font-size: 32px;
+}
+.input-code-text{
+    transform: translateX(-275%);
+}
 
 
 /* hover list for my list */

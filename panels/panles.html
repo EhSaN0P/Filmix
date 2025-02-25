@@ -6,8 +6,8 @@
     <title>Filmix</title>
     <link rel="icon" href="../ui web video/desktop/All imgs/logo/logo.png" />
 
-     <!-- booot strap css link -->
-      <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <!-- booot strap css link -->
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
     <!-- Tailwind css added -->
     <!-- <link rel="stylesheet" href="../tailwind/input.css" />
     <link rel="stylesheet" href="../tailwind/output.css" /> -->
@@ -87,56 +87,116 @@
       </div>
     </section> -->
 
-
-
     <!-- tab page -->
 
-    <section class="container " style="width:60%;margin: auto;">
-
-      <ul class="nav nav-tabs" id="myTab" role="tablist" style="display: flex;justify-content: space-evenly;">
+    <section class="container" style="width: 60%; margin: auto">
+      <ul
+        class="nav nav-tabs"
+        id="myTab"
+        role="tablist"
+        style="display: flex; justify-content: space-evenly"
+      >
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="Devices-tab" data-bs-toggle="tab" data-bs-target="#Devices" type="button" role="tab" aria-controls="Devices" aria-selected="true">Devices</button>
+          <button
+            class="nav-link active"
+            id="Devices-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#Devices"
+            type="button"
+            role="tab"
+            aria-controls="Devices"
+            aria-selected="true"
+          >
+            Devices
+          </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="KidLock-tab" data-bs-toggle="tab" data-bs-target="#KidLock" type="button" role="tab" aria-controls="KidLock" aria-selected="false">Kid Lock</button>
+          <button
+            class="nav-link"
+            id="KidLock-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#KidLock"
+            type="button"
+            role="tab"
+            aria-controls="KidLock"
+            aria-selected="false"
+          >
+            Kid Lock
+          </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="Pays-tab" data-bs-toggle="tab" data-bs-target="#Pays" type="button" role="tab" aria-controls="Pays" aria-selected="false">Pays</button>
+          <button
+            class="nav-link"
+            id="Pays-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#Pays"
+            type="button"
+            role="tab"
+            aria-controls="Pays"
+            aria-selected="false"
+          >
+            Pays
+          </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="Profile-tab" data-bs-toggle="tab" data-bs-target="#Profile" type="button" role="tab" aria-controls="Profile" aria-selected="false">Profile</button>
+          <button
+            class="nav-link"
+            id="Profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#Profile"
+            type="button"
+            role="tab"
+            aria-controls="Profile"
+            aria-selected="false"
+          >
+            Profile
+          </button>
         </li>
       </ul>
-      
+
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="Devices" role="tabpanel" aria-labelledby="Devices-tab">tab 1</div>
+        <div
+          class="tab-pane fade show active d-flex flex-column justify-content-center align-items-center gap-3"
+          id="Devices"
+          role="tabpanel"
+          aria-labelledby="Devices-tab"
+        >
+          <label for="" class="">Email</label>
+          <input type="text" class="input-costume" />
+          <label for="" class="">Password</label>
+          <input type="text" class="input-costume" />
+          <label for="" class="input-code-text">Code</label>
+          <input type="text" class="input-code" />
+        </div>
 
-        <div class="tab-pane fade" id="KidLock" role="tabpanel" aria-labelledby="KidLock-tab">tab 2</div>
+        <div
+          class="tab-pane fade"
+          id="KidLock"
+          role="tabpanel"
+          aria-labelledby="KidLock-tab"
+        >
+          tab 2
+        </div>
 
-        <div class="tab-pane fade" id="Pays" role="tabpanel" aria-labelledby="Pays-tab">tab 3</div>
+        <div
+          class="tab-pane fade"
+          id="Pays"
+          role="tabpanel"
+          aria-labelledby="Pays-tab"
+        >
+          tab 3
+        </div>
 
-        <div class="tab-pane fade" id="Profile" role="tabpanel" aria-labelledby="Profile-tab">tab 4</div>
+        <div
+          class="tab-pane fade"
+          id="Profile"
+          role="tabpanel"
+          aria-labelledby="Profile-tab"
+        >
+          tab 4
+        </div>
       </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!----------------------------- body  finish----------------------------->
     <!-- module link for data and custom js -->
@@ -146,7 +206,7 @@
     <!-- script links -->
 
     <!-- boot strap script added -->
-     <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
     <!-- Tailwind script added -->
     <!-- <script src="../tailwind/tailwind.js"></script> -->
     <!-- jquery script added -->
@@ -160,12 +220,6 @@
     <!-- jquery waypoint added -->
     <script src="../jquery Files/way Point/jquery.waypoints.min.js"></script>
     <!--  jq  custom-->
-    <script>
-      $(document).ready(() => {
-        $("#btn-email").click(() => {
-          $("#email-sec").css("scale", "100");
-        });
-      });
-    </script>
+    <script></script>
   </body>
 </html>
