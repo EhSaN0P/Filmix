@@ -48,6 +48,14 @@ export let videos = {
                         img: "../videos img/horror/desktop/slender_man_wallpaper_by_garnetbarren_d71j1uf-fullview.jpg",
                         VerticalImg: "../videos img/horror/mobile/slenderman.jpg",
                     },
+                      // The.Curse.of.La.Llorona
+                      curseOfLiorona : {
+                        namee: "The CurseofLlorona",
+                        rate:7,
+                        link: '<iframe src="https://www.aparat.com/video/video/embed/videohash/PpGv2/vt/frame"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>',
+                        img: "../videos img/horror/desktop/lorona.jpg",
+                        VerticalImg: "../videos img/horror/mobile/loronaMob.jpg",
+                    },
 
             },
             // fun movies

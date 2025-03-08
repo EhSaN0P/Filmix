@@ -230,3 +230,26 @@ for (const key in datFun) {
    
 
     }
+
+
+
+
+
+
+    // slider grid item added
+
+
+    let sliderGridImg = ["../videos img/fun/desktop/hop.jpg","../videos img/horror/desktop/counjoring 2.jpg","../videos img/horror/desktop/lorona.jpg","../videos img/horror/desktop/the-grudge-2-2006-121668.jpg","../videos img/horror/desktop/it-hollywood-movie-mhzcl1vliypxm3gl.jpg","../videos img/horror/desktop/scream-poster.jpg","../videos img/fun/desktop/hop.jpg","../videos img/horror/desktop/counjoring 2.jpg","../videos img/horror/desktop/lorona.jpg","../videos img/horror/desktop/the-grudge-2-2006-121668.jpg","../videos img/horror/desktop/it-hollywood-movie-mhzcl1vliypxm3gl.jpg","../videos img/horror/desktop/scream-poster.jpg","../videos img/fun/desktop/hop.jpg","../videos img/horror/desktop/counjoring 2.jpg","../videos img/horror/desktop/lorona.jpg"]
+
+    sliderGridImg.forEach(element => {
+        let cont = document.getElementsByClassName("sliderGrid").item(0)
+        let simg = document.createElement("img")
+        simg.classList = "download-img"
+        simg.src = element
+
+        cont.appendChild(simg)
+
+
+
+        
+    });

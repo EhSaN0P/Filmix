@@ -25,9 +25,14 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    cursor: grab;
     
-    
-    
+
+}
+
+
+.sliderCon:active{
+  cursor: grabbing;
 }
 
 
